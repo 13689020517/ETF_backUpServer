@@ -1,15 +1,14 @@
-package com.zmate.dao;
-
+package com.zmate.mapper;
 
 import com.zmate.pojo.User;
 
 import java.util.List;
 
-public interface UserDAO {
+public interface UserMapper {
 
     public User findById(Integer id);
 
-    public List<User> findByName(String name);
+    public List<User> findByName(String username);
 
     public void insertUser(User user);
 

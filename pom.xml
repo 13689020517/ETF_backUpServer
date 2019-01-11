@@ -29,6 +29,14 @@
                 5.1.45
             </version>
         </dependency>
+        <!-- Spring Boot web 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>
+                1.5.10.RELEASE
+            </version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -7,6 +7,10 @@
         配置环境
         default:默认要加载的环境
     -->
+    <typeAliases>
+        <typeAlias type="com.zmate.pojo.User" alias="user"></typeAlias>
+    </typeAliases>
+
     <environments default="development">
         <environment id="development">
             <!--事务管理器-->
@@ -16,13 +20,13 @@
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8"/>
                 <property name="username" value="root"/>
-                <property name="password" value="asdfghjkl0"/>
+                <property name="password" value="123456"/>
             </dataSource>
         </environment>
 
     </environments>
     <!--配置映射文件-->
     <mappers>
-        <mapper resource="User.xml"/>
+        <mapper resource="UserMapper.xml"/>
     </mappers>
 </configuration>
