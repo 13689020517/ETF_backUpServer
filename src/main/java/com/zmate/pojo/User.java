@@ -1,15 +1,24 @@
 package com.zmate.pojo;
 
+
 public class User {
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    private Integer id;
+    private int id;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                '}';
+    }
 
     public String getUsername() {
         return username;
@@ -20,4 +29,9 @@ public class User {
     }
 
     private String username;// 用户姓名
+
+    public User(int id,String username){
+        this.id = id;
+        this.username = username;
+    }
 }

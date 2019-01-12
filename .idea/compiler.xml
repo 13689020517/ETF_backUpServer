@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ETF_backUpServer" target="1.5" />
+      <module name="ETF_backUpServer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

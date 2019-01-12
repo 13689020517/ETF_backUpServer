@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zmate.mapper.UserMapper">
+    <insert id="insertUser" parameterType="com.zmate.pojo.User">
+        insert into user values (#{id},#{username})
+    </insert>
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
+    <select id="findById" parameterType="int" resultType="com.zmate.pojo.User">
+        select * from user where id = #{id}
+    </select>
+    <select id="findByName" parameterType="string" resultType="com.zmate.pojo.User">
+        select * from user where username like concat ("%",#{username},"%")
+    </select>
+</mapper>
