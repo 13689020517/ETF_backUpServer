@@ -1,6 +1,5 @@
 package com.zmate.pojo;
 
-
 public class User {
     public int getId() {
         return id;
