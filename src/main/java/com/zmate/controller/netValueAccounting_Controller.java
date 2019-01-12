@@ -29,9 +29,9 @@ public class netValueAccounting_Controller {
     public String testMysql() {
         SqlSession sqlSession = MainApp.sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-        List<User> list = userMapper.findByName("xiaobo");
+        User user = userMapper.findById(1);
         sqlSession.close();
-        return "测试mysqlchenggong:"+list.get(0).getId();
+        return "测试mysqlchenggong:"+user;
     }
 
 }

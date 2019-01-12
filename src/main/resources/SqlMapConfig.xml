@@ -3,10 +3,14 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <!--
         配置环境
         default:默认要加载的环境
     -->
+    <typeAliases>
+        <typeAlias alias="user" type="com.zmate.pojo.User"/>
+    </typeAliases>
 
     <environments default="development">
         <environment id="development">
