@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zmate.mapper.purchasingAndRedeem_GapMapper">
+    <insert id="insert_Gap_Record" parameterType="gap_Bean">
+        insert into purchaseAndReedem_Gap values (#{order_Date},#{initial_Purchasing_Value},#{fund_Total_Recieved},#{evaluate_TotalPurchasing_Value},#{actual_Redeem_Value},#{evaluate_Total_Value},#{fund_Should_Recieved_Value},#{evaluate_Total_Redeem_Value},#{gap_Calculate},#{IOPV},#{should_Purchasing_Gap},#{evaluate_Purchasing_Portion},#{should_Redeem_Gap},#{evaluate_Redeem_Portion},#{evaluate_Redeem_Value})
+    </insert>
+</mapper>

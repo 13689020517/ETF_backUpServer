@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zmate.mapper.recallOrderRecord_Mapper">
+    <insert id="batchInsert" parameterType="java.util.List">
+        insert into recallOrderRecord
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.tx_Hash},#{item.client_ID},#{item.tx_Type},#{item.contract_Value},#{item.contract_Coin_Type},#{item.tx_Submit_Date},#{item.tx_Recall_Date},#{item.refund_Provide_Date},#{item.get_Refund_Status},#{item.get_Refund_Date},#{item.actual_Get_Value},#{item.actual_Get_CoinType},#{item.order_Status},#{item.abstract_MSG})
+        </foreach>
+    </insert>
+</mapper>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>净值核算中心</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bossanova.uk/js/jquery.jexcel.js"></script>
+    <script src="http://cdn.bossanova.uk/js/jquery.jcalendar.js"></script>
+    <link rel="stylesheet" href="http://cdn.bossanova.uk/css/jquery.jexcel.css" type="text/css" />
+    <link rel="stylesheet" href="http://cdn.bossanova.uk/css/jquery.jcalendar.css" type="text/css" />
+</head>
+<body>
+   <div id="chart"></div>
+   <div>
+       <button id="submit" class="btn btn-info" style="width: 100%;">提交</button>
+   </div>
+</body>
+<script>
+
+let resultArr = [];
+let submitObj;
+
+$(function(){
+　 $.ajax({
+            url:'/netValue/getNetValue_ComponetCoin_Chart',
+            type:'GET',
+            success:function(data){
+               submitObj = data;
+               getJson2Arr(data)
+               buildExcel()
+            }
+        });　
+
+   $("#submit").click(function () {
+       if(submitObj == null){
+          alert('数据正在统计请稍后再提交!')
+          return;
+       }
+        $.ajax({
+            url:'/netValue/updateNetValue_And_TxCenter_Data',
+            type:'POST',
+            data:{
+                result:JSON.stringify(submitObj)
+            },
+            success:function(data){
+               alert('相关数据正在更新！')
+            }
+        });
+   })
+
+});
+
+function getJson2Arr(obj){
+      let arr = obj.componet_Coin
+      for (let i = 0, item; item = arr[i++];) {
+         console.log(item.coin_Type)
+         let tempArr = []
+
+         tempArr.push(item.coin_Type)
+         tempArr.push(item.fund_Total)
+         tempArr.push(item.eth_Price)
+         tempArr.push(item.usd_Price)
+         tempArr.push(item.total_USD)
+         tempArr.push(item.total_ETH)
+         tempArr.push(item.single_Amount)
+
+         resultArr.push(tempArr)
+      }
+}
+
+function buildExcel(){
+   $('#chart').jexcel({
+    data:resultArr,
+    colHeaders: ['成分币种','基金持有总量','ETH单价','美元单价','累计美元价值','累计ETH价值','单位份额中币数'],
+    colWidths: [ 150, 150, 150, 150, 150, 150, 150 ],
+    columns: [
+        { type: 'text' },
+        { type: 'numeric' },
+        { type: 'numeric' },
+        { type: 'numeric' },
+        { type: 'numeric' },
+        { type: 'numeric' },
+        { type: 'numeric' }
+       ]
+   });
+}
+
+</script>
+</html>

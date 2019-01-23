@@ -9,6 +9,7 @@
     -->
     <typeAliases>
         <typeAlias alias="user" type="com.zmate.pojo.User"/>
+        <typeAlias alias="gap_Bean" type="com.zmate.pojo.purchasingAndRedeem_GapChartResult_Bean"/>
     </typeAliases>
 
     <environments default="development">
@@ -18,9 +19,9 @@
             <!--使用连接池-->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mydb1?characterEncoding=utf-8"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/accounting?characterEncoding=utf-8"/>
                 <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="password" value="asdfghjkl0"/>
             </dataSource>
         </environment>
 
@@ -28,5 +29,11 @@
     <!--配置映射文件-->
     <mappers>
         <mapper resource="./mapper/UserMapper.xml"/>
+        <mapper resource="./mapper/exchangeTreatCenter_PurchasingMapper.xml"/>
+        <mapper resource="./mapper/exchangeTreatCenter_RedeemMapper.xml"/>
+        <mapper resource="./mapper/purchasingAndRedeem_GapMapper.xml"/>
+        <mapper resource="./mapper/exchangeBalanceCenter_RedeemMapper.xml"/>
+        <mapper resource="./mapper/exchangeBalanceCenter_PurchasingMapper.xml"/>
+        <mapper resource="./mapper/recallOrderRecord_Mapper.xml"/>
     </mappers>
 </configuration>

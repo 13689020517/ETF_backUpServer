@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交申购赎回结算总额</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<button id="submit1" class="btn btn-info" style="width: 100%;">提交申购结算</button>
+
+<button id="submit2" class="btn btn-info" style="width: 100%;">提交赎回结算</button>
+
+</body>
+
+<script>
+
+$(function(){
+
+    let submitObj1 = {
+        "total_Eth_Value":"300",
+        "total_Zmt_Value":"340",
+        "coins":
+            [
+                {
+                    "coinType":"BTC",
+                    "totalValue":"2000"
+                },
+                {
+                    "coinType":"ETH",
+                    "totalValue":"1800"
+                },
+                {
+                    "coinType":"ETC",
+                    "totalValue":"1500"
+                },
+                {
+                    "coinType":"XLM",
+                    "totalValue":"1900"
+                },
+                {
+                    "coinType":"USDT",
+                    "totalValue":"3000"
+                }
+            ]
+    }
+
+    let submitObj2 = {
+        "total_Eth_Value":"300",
+        "total_Zmt_Value":"340",
+        "coins":
+            [
+                {
+                    "coinType":"BTC",
+                    "totalValue":"2000"
+                },
+                {
+                    "coinType":"ETH",
+                    "totalValue":"1800"
+                },
+                {
+                    "coinType":"ETC",
+                    "totalValue":"1500"
+                },
+                {
+                    "coinType":"XLM",
+                    "totalValue":"1900"
+                },
+                {
+                    "coinType":"USDT",
+                    "totalValue":"3000"
+                }
+            ]
+    }
+
+   $("#submit1").click(function () {
+   console.log('OBJ1值为:'+JSON.stringify(submitObj1))
+        $.ajax({
+            url:'/calculate/savePurchasingCalculateChart',
+            type:'POST',
+            data:{
+                result:JSON.stringify(submitObj1)
+            },
+            success:function(data){
+               alert('相关申购数据正在更新！')
+            }
+        });
+   })
+
+   $("#submit2").click(function () {
+   console.log('OBJ2值为:'+JSON.stringify(submitObj2))
+        $.ajax({
+            url:'/calculate/saveRedeemCalculateChart',
+            type:'POST',
+            data:{
+                result:JSON.stringify(submitObj2)
+            },
+            success:function(data){
+               alert('相关赎回数据正在更新！')
+            }
+        });
+   })
+
+});
+
+</script>
+
+</html>

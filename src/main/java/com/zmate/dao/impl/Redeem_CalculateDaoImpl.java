@@ -1,29 +1,26 @@
 package com.zmate.dao.impl;
 
-import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
-import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
-import com.zmate.dao.User_MongoDao;
+import com.zmate.MainApp;
+import com.zmate.dao.Redeem_CalculateDao;
 import org.bson.Document;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static com.mongodb.client.model.Filters.*;
 import static com.mongodb.client.model.Updates.inc;
 
 @Component
-public class User_MongoDaoImpl implements User_MongoDao {
-
+public class Redeem_CalculateDaoImpl implements Redeem_CalculateDao {
     MongoCollection<Document> collection;
 
-    public User_MongoDaoImpl() {
-        MongoClient mongoClient = new MongoClient("localhost" , 27017);
-        MongoDatabase database = mongoClient.getDatabase("zmt");
-        collection = database.getCollection("user_Mongo");
+    public Redeem_CalculateDaoImpl() {
+        collection = MainApp.database.getCollection("redeem_Calculate");
     }
 
     /**
@@ -41,17 +38,30 @@ public class User_MongoDaoImpl implements User_MongoDao {
          "info" : { x : 203, y : 102 }
          }
          */
-        Document document = new Document("name","MongoDB")
-                .append("type", "nosqlDB")
-                .append("count", 1)
-                .append("versions", Arrays.asList("v3.6","v3.0","v2.6"))
-                .append("info", new Document("x",203)
-                        .append("y",102)
-                );
+        Document document = new Document("date", "2018/03/03 10:20:11")
+                .append("client_ID","xiaobo")
+                .append("eth_Value","20")
+                .append("zmt_Value","10")
+                .append("componet_Coin", Arrays.asList(
+                        new Document("BTC","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+                        new Document("ETH","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+                        new Document("ETC","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+                        new Document("LTC","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+                        new Document("XRP","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+                        new Document("USDT","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
+                        new Document("XLM","0xaaaaaaaaaaaaaaaaaaaaaaaaaaa")));
 
         collection.insertOne(document);
-
         System.err.println("count of documents from collection is :"+collection.count());
+    }
+
+    /**
+     * 存入多条数据【插入多个文档对象】
+     */
+    @Override
+    public void SaveMany(List<Document> documents){
+        collection.insertMany(documents);
+        System.err.println("批量插入多条记录成功!");
     }
 
     /**
@@ -59,7 +69,6 @@ public class User_MongoDaoImpl implements User_MongoDao {
      */
     @Override
     public void findOne(){
-
         Document doc = collection.find().first();
         System.err.println("只取【test】集合中的第一个文档对象："+doc.toJson());
     }
@@ -69,7 +78,6 @@ public class User_MongoDaoImpl implements User_MongoDao {
      */
     @Override
     public void findAll(){
-
         /**
          * 要检索集合中的所有文档，我们将使用find()方法，而不需要任何参数。
          * 为了遍历结果，将iterator()方法链接到find()中。
@@ -96,26 +104,18 @@ public class User_MongoDaoImpl implements User_MongoDao {
     @Override
     public void queryOne(){
 
-        /**
-         * 查询count == 1 的文档对象
-         */
-        Document doc = collection.find(eq("count", 1)).first();
-        if(doc!=null){
-            System.err.println("条件1查询结果："+doc.toJson());
-        }else{
-            System.err.println("条件1查询结果：无");
-        }
-
-
-        /**
-         * 查询count<2  且 name.equals("Mongo")的文档对象,显然不存在
-         * 如果查询全部符合条件的文档集合，请使用find(*).iterator()
-         */
-        doc = collection.find(and(lt("count",2),eq("name", "Mongo"))).first();
-        if(doc!=null){
-            System.err.println("条件2查询结果："+doc.toJson());
-        }else{
-            System.err.println("条件2查询结果：无");
+        MongoCursor<Document> cursor = collection.find(eq("date", "2018/03/03 10:20:11")).iterator();
+        try {
+            /**
+             * 如果迭代到下一个对象等于false，退出迭代，并关闭迭代器
+             */
+            int index = 0;
+            while (cursor.hasNext()) {
+                System.err.println((index+1)+":"+cursor.next().toJson());
+                index++;
+            }
+        } finally {
+            cursor.close();
         }
 
         /**
@@ -181,6 +181,12 @@ public class User_MongoDaoImpl implements User_MongoDao {
          */
         DeleteResult result = collection.deleteMany(gte("count", 100));
         System.err.println("删除影响的行数："+result.getDeletedCount());
+    }
+
+    @Override
+    public String queryByOrderID(String order_ID){
+        Document doc = collection.find(eq("_id", order_ID)).first();
+        return doc.toJson();
     }
 
 }
