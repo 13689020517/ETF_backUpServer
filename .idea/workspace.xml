@@ -5,68 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dda2ee3-c07e-4250-a802-72e3c881b1a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/controller/exchangeBalanceCenterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Net_Value_ChartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Net_Value_ResultDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_Order_Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Recall_OrderRecordDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_Order_Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Net_Value_ChartDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Net_Value_ResultDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_Order_DaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Recall_OrderRecordDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_Order_DaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/mapper/exchangeBalanceCenter_PurchasingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/mapper/exchangeBalanceCenter_RedeemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/mapper/exchangeTreatCenter_PurchasingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/mapper/exchangeTreatCenter_RedeemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/mapper/purchasingAndRedeem_GapMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/mapper/recallOrderRecord_Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/coin_Price_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/exchangeBalanceCenter_PurchasingChart_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/exchangeBalanceCenter_RedeemChart_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/exchangeTreatCenter_PurchasingChart_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/exchangeTreatCenter_RedeemChart_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/net_Value_CoinType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/purchasingAndRedeem_GapChartResult_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/purchasingAndRedeem_Gap_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/pojo/recallOrder_Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/util/GlobalVar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/util/HttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zmate/util/MathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/exchangeBalanceCenter_PurchasingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/exchangeBalanceCenter_RedeemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/exchangeTreatCenter_PurchasingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/exchangeTreatCenter_RedeemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/purchasingAndRedeem_GapMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/recallOrderRecord_Mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-2.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/net_Value_Chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/submitTotalPurchasing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETF_backUpServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ETF_backUpServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/controller/netValueAccounting_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/controller/netValueAccounting_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/dao/User_MongoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Net_ValueDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/User_MongoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Net_ValueDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/controller/netValueAccounting_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/controller/netValueAccounting_Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/dao/User_MongoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/dao/impl/User_MongoDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/controller/purchasingAndRedeemCalculateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/controller/purchasingAndRedeemCalculateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/dao/Purchasing_CalculateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/dao/Purchasing_CalculateDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/dao/Redeem_CalculateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/dao/Redeem_CalculateDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zmate/dao/impl/Redeem_CalculateDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zmate/dao/impl/Redeem_CalculateDaoImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,22 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/controller/exchangeBalanceCenterController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Recall_OrderRecordDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="375">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,15 +109,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Net_Value_ResultDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Net_ValueDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/submitTotalPurchasing.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/util/GlobalVar.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_Order_Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/mapper/exchangeBalanceCenter_RedeemMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_Order_Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_Order_DaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Net_ValueDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/exchangeBalanceCenter_RedeemMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/mapper/exchangeBalanceCenter_PurchasingMapper.java" />
@@ -187,9 +123,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/exchangeBalanceCenter_PurchasingMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/controller/netValueAccounting_Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_Order_DaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/util/MathUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Recall_OrderRecordDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/mapper/recallOrderRecord_Mapper.java" />
@@ -198,6 +131,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Recall_OrderRecordDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zmate/controller/exchangeBalanceCenterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java" />
       </list>
     </option>
   </component>
@@ -232,7 +171,7 @@
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="946" />
+    <option name="width" value="913" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -241,8 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +236,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,7 +251,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548234483821" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550028197040" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="D:/toptoken/toptoken" />
@@ -508,10 +447,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="946" height="1056" extended-state="4" />
+    <frame x="65" y="24" width="922" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21714923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31922197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -544,7 +483,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.24354658" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.24276169" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,27 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/Net_ValueDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -853,40 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_Order_DaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -917,40 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_Order_Dao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_Order_DaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,6 +906,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/controller/exchangeBalanceCenterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1164">
+          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Recall_OrderRecordDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1054,10 +936,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/controller/exchangeBalanceCenterController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_Order_DaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+        <state relative-caret-position="144">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/Purchasing_CalculateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Redeem_CalculateDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="193" column="29" selection-start-line="193" selection-start-column="18" selection-end-line="193" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/Redeem_CalculateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/dao/impl/Purchasing_CalculateDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="195" column="44" selection-start-line="195" selection-start-column="40" selection-end-line="195" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="89" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zmate/controller/purchasingAndRedeemCalculateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

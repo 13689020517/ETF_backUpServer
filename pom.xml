@@ -82,6 +82,12 @@
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
+        <!-- web3j依赖包. -->
+        <dependency>
+            <groupId>org.web3j</groupId>
+            <artifactId>core</artifactId>
+            <version>4.1.0</version>
+        </dependency>
     </dependencies>
 
 </project>

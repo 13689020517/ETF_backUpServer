@@ -9,6 +9,7 @@ import com.zmate.dao.Redeem_CalculateDao;
 import org.bson.Document;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -187,6 +188,27 @@ public class Redeem_CalculateDaoImpl implements Redeem_CalculateDao {
     public String queryByOrderID(String order_ID){
         Document doc = collection.find(eq("_id", order_ID)).first();
         return doc.toJson();
+    }
+
+    @Override
+    public String queryByDate(String date){
+        ArrayList<Document> documents = new ArrayList<>();
+        Document result = new Document("data", documents);
+        //加入查询条件
+        MongoCursor<Document> cursor = collection.find(eq("date",date)).iterator();
+        try {
+            /**
+             * 如果迭代到下一个对象等于false，退出迭代，并关闭迭代器
+             */
+            int index = 0;
+            while (cursor.hasNext()) {
+                documents.add(cursor.next());
+                index++;
+            }
+            return result.toJson();
+        } finally {
+            cursor.close();
+        }
     }
 
 }

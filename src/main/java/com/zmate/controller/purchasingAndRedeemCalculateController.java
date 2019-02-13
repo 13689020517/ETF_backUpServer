@@ -7,6 +7,7 @@ import com.zmate.dao.*;
 import com.zmate.util.MathUtils;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -142,6 +143,22 @@ public class purchasingAndRedeemCalculateController {
 
         rcd.SaveMany(documents);
         return "saveRedeemCalculateChart成功！";
+    }
+
+    @GetMapping("/approveBuyMany")
+    public String approveBuyMany(){
+        String result = pcd.queryByDate("2019/01/22");
+        JSONObject tempResult = JSON.parseObject(result);
+        JSONArray tempResultArr = (JSONArray) tempResult.get("data");
+        return "";
+    }
+
+    @GetMapping("/approveSellMany")
+    public String approveSellMany(){
+        String result = rcd.queryByDate("2019/01/22");
+        JSONObject tempResult = JSON.parseObject(result);
+        JSONArray tempResultArr = (JSONArray) tempResult.get("data");
+        return "";
     }
 
 }

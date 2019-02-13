@@ -15,4 +15,5 @@ public interface Purchasing_CalculateDao {
     public void deleteOne();
     public void deleteMany();
     public String queryByOrderID(String order_ID);
+    public String queryByDate(String date);
 }
